@@ -7,7 +7,7 @@ Get-InstalledModule exchangeonlinemanagement | Format-List name,version, install
 Update-Module -Name ExchangeOnlineManagement
 Connect-Exchangeonline
 ```
-
+#
 
 > > > #### Displaying current mailbox calendar folder permission.
 ```

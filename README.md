@@ -1,4 +1,13 @@
-> > > # Exchange Powershell Script
+> # Exchange Powershell Script
+
+> > ### Connecting to Exchange Online
+
+```
+Get-InstalledModule exchangeonlinemanagement | Format-List name,version, installedlocation
+Update-Module -Name ExchangeOnlineManagement
+Connect-Exchangeonline
+```
+
 
 #### Displaying current mailbox calendar folder permission.
 ```

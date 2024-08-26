@@ -27,10 +27,10 @@ function Display-CalendarPermissions {
     }
 
     # Prompt for identity of the mailbox to view
-    Write-Host "[ Please enter first.last name of the identity mailbox to view: ] " -NoNewline
+    Write-Host "[ Please enter full email address as of the identity mailbox to view: ] " -NoNewline
     $FullName = Read-Host
-    $Domain = "@"+$EmailAddress.Split("@")[1]
-    $FolderCalendar = $FullName+$Domain+":\Calendar"
+    # $Domain = "@"+$EmailAddress.Split("@")[1]
+    $FolderCalendar = $FullName+":\Calendar"
 
     # Display the mailbox folder permission
     Write-Host
